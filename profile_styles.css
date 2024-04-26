@@ -1,0 +1,54 @@
+/* Стили для страницы профиля */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 3%;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: #353b2f;
+}
+
+h2 {
+    color: #b18961;
+}
+
+button {
+    background-color: #353b2f;
+    color: #d7c8b5;
+    border: 2px solid #b18961;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #b18961;
+    color: #353b2f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+input[type="hidden"] {
+    display: none;
+}

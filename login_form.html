@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <link rel="stylesheet" type="text/css" href="styles_login.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo-holder">
+            <img src="images/eliyabhet.svg" alt="" style="height: 12vh; width: 12vw;">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html" class="nav-item">Главная</a></li>
+            <li><a href="#freeclass" class="nav-item">Бесплатный урок</a></li>
+            <li><a href="#about" class="nav-item">Обо мне</a></li>
+            <li><a href="#contacts" class="nav-item">Контакты</a></li>
+            <li><a href="reg_form.html" class="nav-item">Профиль</a></li>
+            <li><select>
+                    <option value="option1">Russian</option>
+                    <option value="option2">English</option>
+                </select></li>
+        </ul>
+    </header>
+    <h2>Вход</h2>
+    <form action="process_login.php" method="post">
+        <label for="Login">Login:</label>
+        <input type="text" id="login" name="login" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

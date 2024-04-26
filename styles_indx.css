@@ -1,0 +1,349 @@
+/*Стили для русского языка*/
+html[lang="ru"]
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('Josefin_Sans\JosefinSans-Italic-VariableFont_wght.ttf') format('woff2'), /* Укажите правильный путь к вашему файлу .woff2 */
+         url('Josefin_Sans\JosefinSans-VariableFont_wght.ttf') format('woff'); /* Укажите правильный путь к вашему файлу .woff */
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    background: white;
+    width: 100%;
+    
+    z-index: 9999;
+}
+
+    li{
+        list-style: none;
+    }
+
+.nav-item{
+    text-decoration: none;
+    color:#353b2f
+}
+.big-img-frst-block{
+    width: 50vw;
+}
+
+.menu{
+    display: flex;
+    width: 45vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frth-block {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+}
+
+.block {
+    width: 20%;
+    height: auto;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    box-shadow:0px 0px 4px 2px rgba(0, 0, 0, 0.07);
+    transition: all 0.2s;
+}
+
+
+.frst-block{
+    display: flex;
+    
+}
+.scnd-block{
+    background-color: #dac8b5;
+    display: flex;
+    justify-content: center;
+    padding: 4% 0 4% 0;
+}
+.button-styled {
+    background-color: #353b2f;
+    width: 15vw;
+    text-decoration: inherit;
+    height: 7%;
+    display: flex;
+
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    color: #d7c8b5;
+    border: 2px solid #b18961;
+    border-radius: 0; /* чтобы сделать углы квадратными */
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-styled:hover {
+    background-color: #b18961;
+    color: #353b2f;
+}
+
+
+.thrd-block {
+    display: flex;
+    background-color: #dac8b5;
+    padding: 20vh 0 20vh 0;
+}
+
+.info-block {
+    background-color:  #353b2f;
+    width: 50vw;
+    display: flex;
+    padding-left: 2%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h2-yellow-brown {
+    color: #dac8b5;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.h1-brown {
+    color: #b18961;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 82px;
+    letter-spacing: -0.1px;
+    font-weight: 700;
+    word-spacing: 0;
+    font-style: inherit;
+}
+
+.h2-yellow {
+    font-family: 'Lora', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #353b2f;
+}
+
+.left-block {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.right-block {
+    width: 50vw;
+    overflow: hidden;
+    position: relative;
+    align-self:center;
+}
+
+.carosel-block {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.merchandise-slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.merchandise-slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.merchandise-slides {
+    display: flex;
+}
+
+.merch-slide {
+    width: calc(33.33% - 12px); /* Изменил ширину, чтобы вмещать 3 слайда в ряд */
+    height: auto;
+    box-sizing: border-box;
+    margin-right: 12px;
+    border-radius: 15px; /* Увеличил закругление углов */
+}
+
+.merch-prev,
+.merch-next {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #b18961;
+    outline: none;
+}
+
+.merch-prev {
+    position: absolute;
+    left: 1%;
+    top: 45%;
+}
+
+.merch-next {
+    position: absolute;
+    right: 2%;
+    top: 45%;
+}
+
+/* Добавил класс для прозрачной рамки у активного слайда */
+.merch-slide.active {
+    border: 2px solid #b18961;
+}
+
+/*для левогоо блока*/
+/* CSS */
+.workshop-item {
+    padding: 2%;
+}
+
+.workshop-content p{
+   margin:0;
+   padding-left: 2%; 
+}
+.workshop-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+    
+}
+
+.workshop-items-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0px 0px 4px 2px rgba(0, 0, 0, 0.07);
+}
+
+.arrow {
+    margin-left: auto;
+    transition: transform 0.4s ease;
+}
+
+.workshop-item.active .arrow {
+    transform: rotate(90deg);
+}
+
+.workshop-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease; /* Плавная анимация для сворачивания и разворачивания */
+}
+
+.workshop-item.active .workshop-description {
+    max-height: 60%; /* Максимальная высота для отображения всего контента */
+    transition: max-height 0.4s ease; /* Плавная анимация для сворачивания и разворачивания */
+}
+
+
+/*-------------------------5блок-----------------------*/
+
+
+.fvth-block {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Обрезаем содержимое, выходящее за границы блока */
+  
+  }
+  
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 15px 3px, rgb(53 61 48) 0%, #18181af8 100%);
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .text-block {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    ;
+  }
+  .button-free-lesson{
+    display: flex;
+  }
+
+  /*-----------------------6block-------------------------------*/
+  .sxth-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+/*__________________________________________*/
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color:  white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+ 
+    z-index: 999; /* Устанавливаем высокий z-index для размещения кнопки выше всех слоев */
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #000000;
+}
+
+

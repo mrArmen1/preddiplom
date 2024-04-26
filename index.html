@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elizabeth Khard</title>
+    <link rel="stylesheet" type="text/css" href="styles_indx.css">
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="header_script.js"></link>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="overlay.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-holder">
+            <img src="images/eliyabhet.svg" alt="" style="height: 12vh; width: 12vw;">
+        </div>
+        <ul class="menu">
+            <li><a href="#main" class="nav-item">Главная</a></li>
+            <li><a href="#freeclass" class="nav-item">Бесплатный урок</a></li>
+            <li><a href="#about" class="nav-item">Обо мне</a></li>
+            <li><a href="#contacts" class="nav-item">Контакты</a></li>
+            <li><a href="reg_form.html" class="nav-item">Профиль</a></li>
+            <li><select>
+                    <option value="option1">Russian</option>
+                    <option value="option2">English</option>
+                </select></li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="main" class="frst-block">
+            <img src="images/liza2-8-1847x2048.jpg" alt="" class="big-img-frst-block">
+            <div class="info-block">
+                <h2 class="h2-yellow-brown">Онлайн Занятия</h2>
+                <h1 class="h1-brown">Почувствуете магию танца на себе</h1>
+                <button class="button-styled" onclick="redirectToProfile()">Записаться на урок</button>
+<script>function redirectToProfile() {
+    window.location.href = "reg_form.html"; 
+}
+</script>
+            </div>
+        </div>
+
+        <div class="scnd-block" style="background-color: #dac8b5;">
+            <video 
+        
+            controls="controls"
+     
+            
+            source src="images/Elizabeth Khard - Fusion Bellydance USA New York.mp4">
+            
+        </video>
+        </div>
+
+        <div id="backToTopBtn" class="back-to-top-btn">
+            <div class="arrow-up"></div>
+        </div>
+
+        <div class="thrd-block" style="background-color: #dac8b5; display: flex;">
+
+            <div id="about" class="left-block">
+                <h2 class="h2-yellow">Что вас ждет</h2>
+                <div class="workshop-items-container">
+                    <div class="workshop-item" onclick="toggleWorkshopContent(this)">
+                        <div class="workshop-content">
+                            <img src="images/free-icon-plus-1828921.png" alt="" width="20px" height="20px"
+                                margin-right="4%">
+                            <p>Обучающие воркшопы</p>
+                            <div class="arrow">❯</div>
+                        </div>
+                        <p class="workshop-description">Авторские занятия охватывающие разные аспекты Фьюжн
+                            Беллиданс
+                            как для начинающих, так и для опытных танцоров. Каждый урок – это новое открытие,
+                            доступное
+                            в любое время, в любом месте.</p>
+                    </div>
+
+                    <div class="workshop-item" onclick="toggleWorkshopContent(this)">
+                        <div class="workshop-content">
+                            <img src="images/free-icon-plus-1828921.png" alt="" width="20px" height="20px"
+                                margin-right="4%">
+                            <p>Курсы (серии классов) - начало в феврале</p>
+                            <div class="arrow">❯</div>
+                        </div>
+                        <p class="workshop-description">Все детали и подробности будут объявлены в январе. Не
+                            упустите
+                            свой шанс погрузиться в увлекательное путешествие завораживающего танца!</p>
+                    </div>
+
+                    <div class="workshop-item" onclick="toggleWorkshopContent(this)">
+                        <div class="workshop-content">
+                            <img src="images/free-icon-plus-1828921.png" alt="" width="20px" height="20px"
+                                margin-right="4%">
+                            <p>Coming soon</p>
+                            <div class="arrow">❯</div>
+                        </div>
+                        <p class="workshop-description"> У меня накопилось много опыта и идей, которыми не терпится
+                            поделиться. Оставайтесь со мной - впереди вас ждет Много полезного и дохновляющего</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="right-block">
+                <div class="merchandise-slider">
+                    <div class="merchandise-slides-container">
+                        <div class="merchandise-slides">
+                            <img src="images/1-scaled.jpg" class="merch-slide">
+                            <img src="images/2-scaled.jpg" class="merch-slide">
+                            <img src="images/3-scaled.jpg" class="merch-slide">
+                            <img src="images/4-scaled.jpg" class="merch-slide">
+                            <img src="images/5-scaled.jpg" class="merch-slide">
+                            <img src="images/6-scaled.jpg" class="merch-slide">
+                            <img src="images/7-scaled.jpg" class="merch-slide">
+                            <img src="images/8-scaled.jpg" class="merch-slide">
+                            <img src="images/9-scaled.jpg" class="merch-slide">
+
+                        </div>
+                    </div>
+                    <button class="merch-prev" onclick="changeMerchSlide(-1)">&#10094;</button>
+                    <button class="merch-next" onclick="changeMerchSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="frth-block">
+            <div class="block">
+                <img src="images/favorite.gif" width="50px" height="50px" alt="">
+                <h3>Новые навыки</h3>
+                <p>Регулярные занятия помогут вам глубже погрузиться свое тело. Научиться контролировать свои движения.
+                    Улучшить физическое состояние. Повысить свой технический уровень и наработать новые танцевальные
+                    фишечки.</p>
+            </div>
+
+
+            <div id="freeclass" class="block">
+                <img src="images/heart.gif" width="50px" height="50px" alt="Icon 2">
+                <h3>Вдохновение</h3>
+                <p>Фьюжн беллиданс, будучи удивительным синтезом красоты и выражения, неизбежно оставит непередаваемые
+                    впечатления у всех, кто встречает его чарующий мир.</p>
+            </div>
+
+            <div class="block">
+                <img src="images/meteor-rain.gif" width="50px" height="50px" alt="Icon 3">
+                <h3>Хобби</h3>
+                <p>Развиваясь во фьюжн беллиданс, вы открываете для себя бескрайний мир танцевального творчества и
+                    радости от воплощения собственной уникальности.</p>
+            </div>
+
+            <div class="block">
+                <img src="images/chat.gif" width="50px" height="50px" alt="Icon 4">
+                <h3>Комьюнити</h3>
+                <p>Это замечательная возможность познакомиться с единомышленниками, объединенными общей страстью к Фьюжн
+                    Беллиданс. Комьюнити где вдохновляют и поддерживают друг друга.</p>
+            </div>
+        </div>
+
+        <div class="fvth-block">
+            <div class="overlay">
+                <div class="text-block">
+                    <p style="font-family: 'Josefin Sans', sans-serif; color: #dac8b5;">МОЯ МИССИЯ</p>
+                    <p
+                        style=" font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 400; text-transform: capitalize;">
+                        ПОГРУЗИТЕСЬ В МИР ТАНЦА, <br> ГДЕ КАЖДОЕ ДВИЖЕНИЕ <br> РАССКАЗЫВАЕТ ИСТОРИЮ</p>
+                    <p>Моя цель – вдохновлять на танец, обучать контролю над телом, удивлять танцами и образами,<br> и
+                        показывать путь к мастерству через удовольствие от танца</p>
+                    <button onclick="openYouTubePage()" style="margin-top: 2%; border-radius:4px"
+                        class="button-styled button-free-lesson">Бесплатный пробный урок</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contacts" class="sxth-block">
+
+            <h1 class="h1-brown">У вас остались вопросы?</h1>
+
+            <p style="   font-family: 'Josefin Sans', sans-serif;">Есть вопросы и предложения? Напишите мне, и я с
+                удовольствием отвечу вам</p>
+            <div class="icons-holder" style="flex-direction: row; margin-bottom: 10vh;">
+               
+                <a href="https://www.facebook.com/ElizabethKhardikova?mibextid=9R9pXO">
+                    <img src="images/Icon_facebook.png" alt="">    
+                </a>
+                <a href="https://www.instagram.com/elizabeth_khard/">
+                    <img src="images/Icon_instagram.png" alt="">
+                </a>
+                <a href="https://www.youtube.com/@elizabeth_khard">
+                    <img src="images/Icon_youtube.png" alt="">
+                </a>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>

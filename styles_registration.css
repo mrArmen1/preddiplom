@@ -1,0 +1,102 @@
+/* Стили для регистрации студента */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;/* Цвет фона */
+    color: #353b2f; /* Цвет текста */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #b18961; /* Цвет заголовка */
+    margin-top: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background: white;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+
+.nav-item{
+text-decoration: none;
+color:#353b2f
+}
+
+.big-img-frst-block{
+width: 50vw;
+}
+
+.menu{
+    display: flex;
+    width: 45vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+form {
+   display: flex;
+   width: 30%;
+   flex-direction:column ;
+    margin: 0 auto;
+    background-color: #ffffff; /* Цвет фона формы */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+label {
+    font-weight: bold;margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+   
+    padding: 7px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    border: 1px solid #b18961; /* Цвет рамки */
+}
+
+input[type="submit"] {
+     width: 30%;
+
+     align-self: center;
+    padding: 10px;
+    background-color: #353b2f; /* Цвет кнопки */
+    color: #dac8b5; /* Цвет текста на кнопке */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #b18961; /* Измененный цвет кнопки при наведении */
+    color: #353b2f; /* Измененный цвет текста на кнопке при наведении */
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: #b18961; /* Цвет ссылки */
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание ссылки при наведении */
+}
